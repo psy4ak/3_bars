@@ -32,7 +32,7 @@ def get_closest_bar(data, longitude, latitude):
 
 if __name__ == '__main__':
     
-   data=load_data('databars.json')
+    data=load_data('databars.json')
     big=get_biggest_bar(data)
     small=get_smallest_bar(data)
     latitude = float(input('Широта '))
