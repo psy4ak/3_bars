@@ -32,8 +32,10 @@ def get_closest_bar(data, longitude, latitude):
 
 if __name__ == '__main__':
     
-    data=load_data('databars.json')
+   data=load_data('databars.json')
     big=get_biggest_bar(data)
     small=get_smallest_bar(data)
-    closest=get_closest_bar(data, 37.5830439469214500, 55.7578216589971)
+    latitude = float(input('Широта '))
+    longitude = float(input('Долгота '))
+    closest=get_closest_bar(data, longitude, latitude)
     print ('Наибольший ',big,'\nНаименьший ',small,'\nБлижайший ',closest)
